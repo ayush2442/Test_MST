@@ -1,0 +1,277 @@
+LAB MST - 1
+
+
+
+Ayush Pandey@Ayush MINGW64 ~ (master)
+$ git clone https://github.com/ayush2442/Test_MST.git
+Cloning into 'Test_MST'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Ayush Pandey@Ayush MINGW64 ~ (master)
+$ git remote add https://github.com/ayush2442/Test_MST.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fet
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch f
+
+
+Ayush Pandey@Ayush MINGW64 ~ (master)
+$ git remote https://github.com/ayush2442/Test_MST.git
+error: unknown subcommand: `https://github.com/ayush2442/Test_MST.git'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tagirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <rem.]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+Ayush Pandey@Ayush MINGW64 ~ (master)
+$ git pull origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Ayush Pandey@Ayush MINGW64 ~ (master)
+$ git remote set https://github.com/ayush2442/Test_MST.git
+error: unknown subcommand: `set'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tagirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <rem.]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+Ayush Pandey@Ayush MINGW64 ~ (master)
+$ git remote https://github.com/ayush2442/Test_MST.git
+error: unknown subcommand: `https://github.com/ayush2442/Test_MST.git'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tagirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <rem.]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+Ayush Pandey@Ayush MINGW64 ~ (master)
+$ cd Test_MST
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ vi TestFile
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ cat TestFile
+This is edited in GIT BASH
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git log
+commit d0c55dfb840d365e6688c5428b0bb89725a9c590 (HEAD -> main, origin/main, origin/HEAD)
+Author: Ayush Pandey <133507452+ayush2442@users.noreply.github.com>
+Date:   Wed Mar 13 10:23:28 2024 +0530
+
+    Initial commit
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git add .
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git commit -m "Test file"
+[main 3e39c16] Test file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TestFile
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git log
+commit 3e39c16c6281b47620295c6ed0126bec17e67bce (HEAD -> main)
+Author: Ayush Pandey <ayushpandey2442@gmail.com>
+Date:   Wed Mar 13 10:51:49 2024 +0530
+
+    Test file
+
+commit d0c55dfb840d365e6688c5428b0bb89725a9c590 (origin/main, origin/HEAD)
+Author: Ayush Pandey <133507452+ayush2442@users.noreply.github.com>
+Date:   Wed Mar 13 10:23:28 2024 +0530
+
+    Initial commit
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git push origin main
+To https://github.com/ayush2442/Test_MST.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/ayush2442/Test_MST.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ vi Test
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ cat Test
+this is edited in git bash
+
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git add .
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git commit -m "commit"
+[main 8a0c5d9] commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 Test
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git log
+commit 8a0c5d94405d2f58c62ac16620e93784f86e2e20 (HEAD -> main)
+Author: Ayush Pandey <ayushpandey2442@gmail.com>
+Date:   Wed Mar 13 10:53:55 2024 +0530
+
+    commit
+
+commit 3e39c16c6281b47620295c6ed0126bec17e67bce
+Author: Ayush Pandey <ayushpandey2442@gmail.com>
+Date:   Wed Mar 13 10:51:49 2024 +0530
+
+    Test file
+
+commit d0c55dfb840d365e6688c5428b0bb89725a9c590 (origin/main, origin/HEAD)
+Author: Ayush Pandey <133507452+ayush2442@users.noreply.github.com>
+Date:   Wed Mar 13 10:23:28 2024 +0530
+
+    Initial commit
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git push origin main
+To https://github.com/ayush2442/Test_MST.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/ayush2442/Test_MST.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git pull origin main
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), 3.65 KiB | 116.00 KiB/s, done.
+From https://github.com/ayush2442/Test_MST
+ * branch            main       -> FETCH_HEAD
+   d0c55df..03dd2a8  main       -> origin/main
+Auto-merging TestFile
+CONFLICT (add/add): Merge conflict in TestFile
+Automatic merge failed; fix conflicts and then commit the result.
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main|MERGING)
+$ git rebase
+TestFile: needs merge
+error: cannot rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main|MERGING)
+$ git log
+commit 8a0c5d94405d2f58c62ac16620e93784f86e2e20 (HEAD -> main)
+Author: Ayush Pandey <ayushpandey2442@gmail.com>
+Date:   Wed Mar 13 10:53:55 2024 +0530
+
+    commit
+
+commit 3e39c16c6281b47620295c6ed0126bec17e67bce
+Author: Ayush Pandey <ayushpandey2442@gmail.com>
+Date:   Wed Mar 13 10:51:49 2024 +0530
+
+    Test file
+
+commit d0c55dfb840d365e6688c5428b0bb89725a9c590
+Author: Ayush Pandey <133507452+ayush2442@users.noreply.github.com>
+Date:   Wed Mar 13 10:23:28 2024 +0530
+
+    Initial commit
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main|MERGING)
+$ git push origin main
+To https://github.com/ayush2442/Test_MST.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ayush2442/Test_MST.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main|MERGING)
+$ git pull origin main
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main|MERGING)
+$ git add .
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main|MERGING)
+$ git commit -m "commit"
+[main f5ba9a2] commit
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git merge
+Already up to date.
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$ git push origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 993 bytes | 496.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ayush2442/Test_MST.git
+   03dd2a8..f5ba9a2  main -> main
+
+Ayush Pandey@Ayush MINGW64 ~/Test_MST (main)
+$
